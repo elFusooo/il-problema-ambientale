@@ -55,15 +55,16 @@
     position: sticky;
     position: -webkit-sticky;
     background-color: rgb(230, 223, 214);
-    padding: 5px;
     padding-right: 10vw;
     z-index: -1
 }
 .atto strong{
-    top: 78px;
+    top: 68px;
+    padding-top:10px
 }
 .scena strong{
-    top: 102px;
+    padding-top:10px;
+    top: 95px;
 }
 .scena, .atto{
     margin-left: 10px;

@@ -10,10 +10,10 @@ body {
     aspect-ratio: 2560 / 1707;
     max-height: 70vh;
 }
-.top *{
+
+.big{
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto
 }
 .top{
     background-color: rgb(230, 223, 214);
