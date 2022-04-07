@@ -7,6 +7,29 @@ window.onload = function() {
             header.classList.remove("open")
         }
     }
+
+    question = document.getElementsByClassName("question")
+    for(i = 0; i<question.length; i++){
+        questionf(question[i])
+    }
+}
+
+function questionf(el) {
+    el.addEventListener("click", function(e){
+        sel = e["path"][0]
+        num = sel.getAttribute("chose")
+        parent = sel.parentElement
+        correct = parent.getAttribute("correct")
+        parent.children[0].classList.add("first")
+        parent.children[1].classList.add("second")
+        if (!sel.classList.contains("first") || !sel.classList.contains("second")){
+            if (num == correct) {
+                sel.classList.add("correct")
+            } else {
+                sel.classList.add("incorrect")
+            }
+        }
+    })
 }
 
 function menu() {

@@ -13,7 +13,7 @@ body {
 
 .big{
     max-width: 1500px;
-    margin: auto
+    margin: auto;
 }
 .top{
     background-color: rgb(230, 223, 214);
@@ -25,4 +25,44 @@ iframe{
 .w3-ul li{
     padding: 5px;
     border-bottom:1px solid rgba(0, 0, 0, 0.2)
+}
+
+.first{
+    width: 100%;
+    transition: ease 2s;
+}
+@keyframes second {
+    0% { width: 50%;}
+    66.66% { width: 0%;}
+    100% { width: 100%;}
+}
+.second {
+    width: 100%;
+    animation: second 3s
+}
+
+@media screen and (max-width: 600px) {
+    .second {
+        width: 100%;
+        animation: none
+    }
+    .first{
+        width: 100%;
+        transition: none
+    }
+    .correct{
+        transition: ease 2s;
+    }
+    .incorrect {
+        transition: ease 2s;
+    }
+}
+
+.correct{
+    color: white;
+    background-color: rgba(20,155,45,1);
+}
+.incorrect {
+    background-color: rgb(215, 25, 25);
+    color: white;
 }
