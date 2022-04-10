@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     right: 0
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 530px) {
     .hamburgher span{
         display: block
     }
@@ -102,6 +102,20 @@ h1, h2, h3, h4, h5, h6{
     position: fixed;
     left:0
 }
+/* Citazione */
+
+.citazione{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.citazione span{
+    font-size:120px;
+    line-height:0.6em;
+    opacity:0.2
+}
+.citazione .margin{
+    margin-top: -40px
+}
+
 /* Helpers */
 
 .a10{
@@ -120,4 +134,7 @@ h1, h2, h3, h4, h5, h6{
 .cc *{
     text-align: center;
     margin: auto 
+}
+.no-mgtop{
+    margin-top: 0
 }

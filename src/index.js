@@ -17,12 +17,15 @@ window.onload = function() {
 function questionf(el) {
     el.addEventListener("click", function(e){
         sel = e["path"][0]
-        num = sel.getAttribute("chose")
-        parent = sel.parentElement
-        correct = parent.getAttribute("correct")
-        parent.children[0].classList.add("first")
-        parent.children[1].classList.add("second")
-        if (!sel.classList.contains("first") || !sel.classList.contains("second")){
+        if (sel.tagName == "I") {
+            sel = sel.parentElement
+        }
+        if (!sel.classList.contains("first") && !sel.classList.contains("second")) {
+            num = sel.getAttribute("chose")
+            parent = sel.parentElement
+            correct = parent.getAttribute("correct")
+            parent.children[0].classList.add("first")
+            parent.children[1].classList.add("second")
             if (num == correct) {
                 sel.classList.add("correct")
             } else {

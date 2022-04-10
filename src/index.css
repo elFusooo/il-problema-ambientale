@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://www.greenplanetnews.it/greenplanet/wp-content/uploads/2018/12/Photo-by-Arnaud-Mesureur-on-Unsplash-scaled.jpg");
+    background-image: url("bg-img.jpg");
     background-size: 100vw;
     background-position: 0 38px;
     background-repeat: no-repeat;
@@ -17,10 +17,8 @@ body {
 }
 .top{
     background-color: rgb(230, 223, 214);
-}
-iframe{
-    width: 100%;
-    height: 100%;
+    padding-bottom: 20px;
+    min-height: calc(30vh - 38px);
 }
 .w3-ul li{
     padding: 5px;
@@ -44,11 +42,11 @@ iframe{
 @media screen and (max-width: 600px) {
     .second {
         width: 100%;
-        animation: none
+        animation: initial
     }
     .first{
         width: 100%;
-        transition: none
+        transition: initial
     }
     .correct{
         transition: ease 2s;
@@ -56,13 +54,45 @@ iframe{
     .incorrect {
         transition: ease 2s;
     }
+    iframe{
+        width: 100%!important;
+    }
 }
 
 .correct{
     color: white;
-    background-color: rgba(20,155,45,1);
+    background-color: rgb(85, 237, 85)
 }
-.incorrect {
-    background-color: rgb(215, 25, 25);
+.incorrect{
+    background-color: rgb(240, 60, 60);
     color: white;
 }
+
+#body * a {
+    position: relative;
+    text-decoration: none;
+}
+  
+#body * a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+    transition: ease 1s;
+}
+  
+#body * a:hover::before {
+    width: 0%;
+    background-color: transparent;
+}
+iframe{
+    margin: auto;
+    margin-bottom: 25px;
+    display: block;
+    width: 600px;
+    aspect-ratio: 560/315;
+}
+
