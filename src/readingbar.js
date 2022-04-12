@@ -18,4 +18,11 @@ window.onload = function() {
             bar.style.height = "23px"
         }
     }
+    header = document.getElementById("head")
+    body = document.getElementById("body")
+    body.onclick = function() {
+        if(header.classList.contains("open")){
+            header.classList.remove("open")
+        }
+    }
 }

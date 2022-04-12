@@ -23,7 +23,9 @@
     max-width: 2000px;
     margin:auto
 }
-
+#body{
+    margin-top: 38px
+}
 /* Testo */
 .testo div{
     display: table;
