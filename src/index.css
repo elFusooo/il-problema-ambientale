@@ -61,10 +61,10 @@ body {
 
 .correct{
     color: white;
-    background-color: rgb(85, 237, 85)
+    background-color: #4CAF50
 }
 .incorrect{
-    background-color: rgb(240, 60, 60);
+    background-color: #f44336;
     color: white;
 }
 
