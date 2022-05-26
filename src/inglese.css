@@ -76,3 +76,28 @@ select{
 .nomargin{
     margin: 0!important
 }
+.sensible-content{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top:10%
+}
+.sensible-content *{
+    text-align: center;
+}
+.sensible-content p{
+    font-weight: 700;
+}
+
+.blur-max{
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.blur-content {
+    position: absolute;
+    top: 0
+}
+.blur-container{
+    position: relative;
+}

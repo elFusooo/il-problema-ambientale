@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
     top: 0;
     right: 0
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 770px) {
     .hamburgher span{
         display: block
     }
@@ -141,4 +141,8 @@ h1, h2, h3, h4, h5, h6{
 
 *{
     text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: left;
 }

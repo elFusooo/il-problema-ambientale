@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/inglese.css">
     <script src="src/index.js"></script>
     <link rel="icon" type="image/x-icon" href="src/favicon.ico">
@@ -25,6 +26,7 @@
           <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
           <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
           <a class="w3-bar-item w3-button w3-hover-teal w3-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
         </div>
       </div>
       <div class="w3-col a2">
@@ -50,13 +52,18 @@
         <p>
           L’isola di Plastica è una raccolta di rifiuti marini situati nel nord dell'Oceano Pacifico. I detriti più densi possono affondare sotto la superficie (si stima all’incirca il 70%), rendendo l'area quasi impossibile da misurare. La sua superficie stimata è di circa 1,6 milioni di km<sup>2</sup>, un'area tre volte più grande della Francia. Al centro di un vortice, l’acqua è calma, questo intrappola i rifiuti, non permettendogli di uscire.<br>
           L’ “isola” è stata scoperta da Charles Moore, lui stava navigando dalle Hawaii alla California dopo aver gareggiato in una gara di vela. Attraversando il Pacifico, lui e il suo equipaggio notarono milioni di pezzi di plastica che circondavano la sua nave.<br>
-          La maggior parte dei detriti provengono dalla plastica e da fonti terrestri, il resto proveniva da imbarcazioni e altre fonti marine. Grazie al sole, la plastica non si biodegrada semplicemente, lei si rompe in pezzi sempre più piccoli, un processo noto anche come fotodegradazione.
+          La maggior parte dei detriti provengono dalla plastica e da fonti terrestri, il resto proveniva da imbarcazioni e altre fonti marine. Grazie al sole, la plastica non si biodegrada semplicemente, si rompe in pezzi sempre più piccoli, un processo noto anche come fotodegradazione.
         </p>
         <h1>Fa male alla vita marina?</h1>
         <div class="w3-row flex">
           <div class="w3-third w3-padding w3-col s12 m6 l4">
-            <div class="w3-card-4 flex-height">
-              <div class="card-img bg-1"></div>
+            <div class="w3-card-4 flex-height blur-container">
+              <div class="card-img bg-1 blur-max" id="sensibile-blur"></div>
+              <div id="sensibile-alert" class="blur-content sensible-content">
+                <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                <p>Contenuti sensibili</p>
+                <button class="w3-button" id="sensibile-button">Visualizza</button>
+              </div>
               <div class="w3-container">
                 <p>Gli albatros scambiano i pezzi di plastica per uova di pesce e li danno in pasto ai pulcini, che moriranno di fame o di organi lacerati.</p>
               </div>
