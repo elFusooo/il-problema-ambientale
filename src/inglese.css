@@ -72,3 +72,7 @@ select, option{
 select{
     border-bottom-left-radius: 10px;
 }
+
+.nomargin{
+    margin: 0!important
+}

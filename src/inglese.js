@@ -1,8 +1,5 @@
 const language = document.getElementById("language")
-console.log(language)
-
-language.addEventListener("change", function(e){
-    console.log(language.value)
+language.addEventListener("change", function(){
     lan = language.value
     if(lan == "eng"){
         window.location = "inglese.html"
